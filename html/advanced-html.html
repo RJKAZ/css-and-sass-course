@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Advanced HTML Concepts</title>
+</head>
+
+<body>
+    <!--Ids and classes-->
+
+    <!--Ids can only be used once since it is an unique identifier, classes are global and can be used multiple times-->
+
+    <p id="paragraph-1">This paragraph has the ID of "paragraph-1</p>
+    <p class="fancy-pants">This paragraph has the class of "fancy-pants"</p>
+
+    <!--Span and Div tags-->
+
+    <!--HTML is the meaning of your webpage, the contact and structure-->
+    <!--Span and Div tags are meaningly tags since they have no standalone meaning-->
+    <!-- That being said they are wildly used and very important, since they add value to our content when we add classes and ids-->
+    <!--Divs are block level elements that allow us to bunch multiple elements together-->
+    <div id="Header-content">
+        <h2>RJ's Website</h2>
+        <p>Welcome to my Website <span class="important">Please take your time</span> and <span class="important">learn
+                something</span></p>
+        <ul>
+            <li>Lets Eat</li>
+            <li>Lets Play</li>
+            <li>Lets Fight</li>
+        </ul>
+    </div>
+
+    <!--Span is an inline element, Spans comes in handy when you want to style a specific part of an element, like a single word within a paragraph, or if you want to attach ids or classes to certain words only.  -->
+
+    <!--Header Tags - when you want a header, usually at the top-->
+
+    <header>
+        <h1>RJs Website</h1>
+        <p><em>Where you'll learn to code!</em></p>
+    </header>
+
+    <!--Foots would naturually go at the end/bottom-->
+    <footer>
+        <p>&copy; 2021 RJ Kazanowski</p>
+    </footer>
+
+    <!--Unlike, div and span tags, the browser will know what the header and footer tags are-->
+
+    <!--The nav tag is also the same where most browsers will instinctivly recognize the nav tag, which is typically used for nav bars or navigation-->
+
+    <nav>
+        <h3>Navigate this site</h3>
+        <ul>
+            <li><a href="basic_structure.html">Basic Structure Page</a></li>
+            <li><a href="form.html">Basic Form Page</a></li>
+            <li><a href="myaboutpage.html">My About Page</a></li>
+        </ul>
+
+    </nav>
+
+    <!--We also have a section tag, thats like a DIV tag but has a bit more meaning, its used best with the article tag-->
+
+    <!--And we have the aside tag too, it used kind of like a side-thought, or it can even be used almost like a navbar -->
+
+    <!--And we also have the time tag-->
+
+
+    <article>
+        <section class="article-heading">
+            <h3>Learning to Code from Scratch</h3>
+            <span>By RJ Kaz</span>
+        </section>
+
+        <section class="article-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem minima, iste tempore error harum,
+                debitis qui alias fuga facilis iusto quis nam ea, enim odit sint voluptate dolorem dolor saepe.</p>
+            <aside>
+                <h4>Quick story about how I made my first $500 in web design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, cumque tempora? Porro, minima
+                    pariatur. Provident iste eligendi voluptate ipsum amet?</p>
+
+            </aside>
+        </section>
+
+        <section class="article-footer">
+            <footer>Posted in <strong>Coding</strong></footer>
+            <div>Posted on <time>Oct 6th 2021</time></div>
+            <div class="further-reading">
+                <h4>If you liked this article, you'll love</h4>
+                <nav>
+                    <ul>
+                        <li><a href="basic_structure.html">Basic Structure Page</a></li>
+                        <li><a href="form.html">Basic Form Page</a></li>
+                        <li><a href="myaboutpage.html">My About Page</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </section>
+
+    </article>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
