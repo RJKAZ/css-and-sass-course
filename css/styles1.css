@@ -1,0 +1,105 @@
+body {
+  background-color: #fc3;
+  color: #333;
+}
+
+#classPage {
+  background-color: white;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 18px;
+  font-style: italic;
+}
+
+ol {
+  margin: 20px;
+  padding: 20px;
+  color: white;
+}
+
+/*
+styles for the ID and Class Lecture
+*/
+
+#main-title {
+  color: #fc3;
+  background: #353535;
+  padding: 10px;
+  margin: 20px;
+  font-size: 18px;
+}
+
+.sectionHeader {
+  color: olive;
+  border: solid 1px pink;
+  padding: 40px 20px 10px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+/* Styles for the Descendant Selector Lecture */
+
+.primary-box {
+  background-color: white;
+  border: solid 10px #333;
+  padding: 20px;
+}
+
+.secondary-box {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Example of a decendent selector, so in that example its taking the decendent p element of the .secondary-box */
+
+.secondary-box p {
+  font-size: 14px;
+  font-style: normal;
+}
+
+/* To go more specifc, a decendent of a decendent, you can go as far down as you want.  */
+
+.secondary-box p em {
+  color: #fc3fc3;
+}
+
+/* Styles for the grouping selector lecture */
+
+#mainContainer {
+  width: 960px;
+  margin: 0 auto; /*this is the key to centering, 0 here applies to top and bottom, and auto applies to left and right, and auto will calculate the left and right margin to be the same. so this will center the content in the middle no matter what*/
+}
+
+.primary-box,
+.secondary-box {
+  margin: 30px 20px;
+}
+
+.inside-box {
+  border: solid 1px black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  border-bottom: solid 3px red;
+  padding: 0 0 10px;
+}
