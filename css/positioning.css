@@ -1,0 +1,44 @@
+#positioning {
+  background: #1b4e5e;
+}
+
+#positioning #container {
+  background: #ffffff;
+  padding: 20px;
+  height: 2000px;
+}
+
+#positioning h2 {
+  font-size: 18px;
+}
+
+.box {
+  background: #db4e3e;
+  color: white;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  line-height: 200px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#relative {
+  position: relative;
+  top: -10px;
+  left: -50px;
+}
+
+#absolute {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#fixed {
+  position: fixed;
+  bottom: 10px;
+  left: 40px;
+}

@@ -71,3 +71,21 @@ Grids - 4 main approaches to grid based designs
 4. Hierarchical
 
 grids create order by distingusihing different types of information
+
+- Block, Inline, & Inline Block -
+  The majority of HTML elements are defined as block level elements or as inline elements.
+
+a block level element takes up a whole line in the browser, from edge to edge, and includes a line break after the element.
+
+Some examples of block elements are <h1>, <p>, <ul>, <table>
+
+Inline elements do not take up a whole line, they have no line break, and are only as wide as the content within the element.
+
+These elements would also stack side by side
+
+Some examples of inline elements are <a>, <img>, <span>
+
+Inline-Block elements are a hybrid mix of inline and block elements. Like an inline element, the box is only as wide as the content, but like a block element, the elements sit on their own line, so all other elements appear below the element.
+
+inline block elements can also be defined within CSS
+display: inline-block
