@@ -1,0 +1,107 @@
+#box {
+  background: red;
+  height: 200px;
+  width: 200px;
+  margin: 40px auto;
+  padding: 50px;
+
+  /*these were added in CSS3*/
+  box-sizing: border-box;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+/* Colors */
+
+#colors {
+  background: rgba(25, 52, 84, 1);
+}
+
+#colors #container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#box2 {
+  height: 200px;
+  width: 200px;
+  margin: 40px auto;
+  padding: 50px;
+  border-radius: 80px;
+}
+
+#colors #box2 {
+  /*  background: linear-gradient(to right, yellow, green); */
+  /* background: linear-gradient(180deg, red, black); */
+  background: radial-gradient(yellow, white, skyblue, rgb(49, 89, 105));
+}
+
+#shadow {
+  width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #fc3;
+  box-shadow: 10px 10px 15px rgb(43, 17, 17);
+}
+
+#shadow h1 {
+  color: white;
+  text-shadow: 0px 2px 5px blue, 0px 2px hotpink;
+}
+
+/* Columns */
+
+#three-columns {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+  column-gap: 20px;
+}
+
+/* Animations & Transitions */
+
+@keyframes box {
+  from {
+    background-color: red;
+    border-radius: 40px;
+    top: 0;
+    left: 0;
+  }
+  to {
+    background-color: black;
+    border-radius: 100px;
+    top: 100px;
+    left: 100px;
+  }
+}
+
+#animations #box {
+  position: relative;
+  animation-name: box;
+  animation-duration: 4s;
+  -o-animation-timing-function: ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+
+#box3 {
+  position: relative;
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  color: white;
+}
+
+#box3:hover {
+  background: red;
+  width: 300px;
+  height: 300px;
+  /* transition: all ease-in 4s; */
+  transition: width 8s, height 2s, background 20s;
+}
